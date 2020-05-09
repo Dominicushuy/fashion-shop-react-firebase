@@ -3,17 +3,13 @@ import { takeLatest, put, call } from 'redux-saga/effects';
 import UserActionTypes from './user.types';
 
 import {
-  signInSuccess,
   signInFailure,
   signOutSuccess,
   signOutFailure,
-  signUpSuccess,
-  signUpFailure
 } from './user.actions';
 
 import {
   auth,
-  googleProvider,
   createUserProfileDocument,
   getCurrentUser
 } from '../../firebase/firebase.utils';
